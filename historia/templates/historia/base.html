@@ -123,13 +123,16 @@
             50%% {box-shadow: 0 0 40px #ffd700;}
         }
 
-        
+
     </style>
 </head>
 
 <body>
     <div class="contenedor">
-
+        <!--Aqui se inserta el contenido especifico de cada pagina.html
+            Esto cambia en cada template hijo-->
+        {% block content%}
+        {% enblock %}
     <div>
 </body>
 </html>
