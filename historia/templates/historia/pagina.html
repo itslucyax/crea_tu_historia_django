@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ titulo }}</title>
+</head>
+<body>
+    <h1>{{ titulo }}</h1>
+
+    <img src="{{ imagen }}">
+
+    <p>{{ texto }}</p>
+
+    <a href="{% url 'bosque' %}">
+        <button>Ir al bosque</button>
+    </a>
+
+    <a href="{% url 'cueva' %}">
+        <button>Entrar en la cueva</button>
+    </a>
+    
+</body>
+</html>
