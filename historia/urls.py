@@ -16,12 +16,20 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from . import views # Importa las vistas (añadido pro itslucyax)
+from . import views # Importa las vistas (añadido: itslucyax)
 #Paso 7: Configurar las URLs de la aplicacion
 urlpatterns = [
-        path('', views.inicio, name='inicio'),
+        #Ruta raiz: paginad de inicio
+        path('', views.inicio, name='inicio'), 
+        #PASO 16: Actualizar las urls (itslucyax)
+        #Rutas exploracion
         path('bosque/', views.bosque, name='bosque'),
-        path('cueva/', views.cueva, name='cueva'),
-        path('final-bueno/', views.final_bueno, name='final_bueno'),
+        path('cueva/', views.cueva, name='castillo'),
+        #Rutas desarrollo
+        path('templo/', views.templo, name='templo'),
+        path('lago/', views.lago, name='lago'),
+        path('mision/', views.mision, name='mision'),
+        #Ruta final malo
         path('final-malo/', views.final_malo, name='final_malo'),
+        
 ]
