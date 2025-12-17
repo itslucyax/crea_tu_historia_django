@@ -20,8 +20,8 @@ def bosque(request):
         'texto': 'El bosque esta lleno de vida y miesterio. Los Kokiri, niños eternos del bosque, te saludan con curiosidad. En el Gran Árbol Deku encuentras la legendaria Espada Kokiri brillando con una luz mágica. El tomarla, sientes una energía ancestral recorrer tu cuerpo. Ahora puedes elegir: ¿explorar el antiguo Templo del Tiempo o aventurarte hacia el Lago Hylia?',
         'imagen': 'https://via.placeholder.com/400', #Cambiar imagen 
         'opciones': [
-            {'url': 'templo':'Entrar en el Templo del Tiempo'},
-            {'url': 'lago': 'Explorar el Lago Hylia'}
+            {'url': 'templo', 'texto': 'Entrar en el Templo del Tiempo'},
+            {'url': 'lago', 'texto': 'Explorar el Lago Hylia'}
         ]
     }
     return render(request, 'historia/pagina.html', contexto)
