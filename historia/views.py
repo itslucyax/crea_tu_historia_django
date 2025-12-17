@@ -51,15 +51,24 @@ def templo(request):
 def lago(request):
     contexto = {
         'titulo': 'El Lago Hylia',
-        'texto': 'Las aguas cristalinas',
-        'imagen': 'https://via.placeholder.com/400'
+        'texto': 'Las aguas cristalinas del Lago Hylia te reciben con calma. Los Zora, seres acuáticos elegantes, emergen de las profundidades. Su princesa, Ruto, te entrega la Piedra Espiritual del Agua como muestra de gratitud por ayudar a su pueblo. Te conviertes en un aliado respetado de los Zora, guardián de las aguas sagradas de Hyrule.',
+        'imagen': 'https://via.placeholder.com/400' #Cambiar imagen
     }
     return render(request, 'historia/final.html', contexto)
 
-def final_malo(request):
+def mision(request):
     contexto = {
-        'titulo': 'Final triste',
-        'texto': 'Tus decisiones te han llevado a un final desafortunado.',
-        'imagen': 'https://via.placeholder.com/400'
+        'titulo': 'El Salvador de Hyrule',
+        'texto': 'Aceptas la misión de Zelda con honor y valentía. Viajas por todo Hyrule: escalas la Montaña de la Muerte para obetener la Pidra Goron, nada en los dominios Zora por la Piedra del Agua, y despiertas al Gran Árbol Deju para conseguir la Piedra del Bosque. Con las tres piedras, abres la Puerta del Tiempo, tomas la Espada Mastra y derrotas a Ganondorf. ¡Hyrule está a salvo y tu leyenda vivirá por siempre!',
+        'imagen': 'https://via.placeholder.com/400' #Cambiar imagen
+    }
+    return render(request, 'historia/final.html', contexto)
+
+#Final malo
+def mision(request):
+    contexto = {
+        'titulo': 'La Oscuridad Prevalece',
+        'texto': 'Decides que la responsabilidad es demasiado grande y huyes del castillo. Sin tu ayuda, Zelda es capturada por Ganondorf. El villano obtiene la Trifuerza y transforma Hyrule en un reino de sombras y desesperación. Los campos verdes se marchitan, el cielo se oscurece eternamente y el pueblo sufre bajo su tirnía. Tu cobardía ha condenado a Hyrule a una era de oscuridad infinita...',
+        'imagen': 'https://via.placeholder.com/400' #Cambiar imagen
     }
     return render(request, 'historia/final.html', contexto)
