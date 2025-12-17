@@ -2,7 +2,7 @@
 <!--Template para paginas de historia con decisiones 
     Hereda de base.html para mantener el diseño consistente-->
 
-    {% {% extends "historia/base.html" %}%} <!--hereda CSS y estrutura de base.html-->
+    {% extends "historia/base.html" %}<!--hereda CSS y estrutura de base.html-->
 
     {% block content %} <!--inserta contenido especifico-->
 
@@ -13,7 +13,7 @@
         <p class="texto-historia">{{texto}}</p>
 
         <div class="botones">
-            {% for opcion un opciones%} <!-- recorre lista de opciones y crea boton para cada una-->
+            {% for opcion in opciones %} <!-- recorre lista de opciones y crea boton para cada una-->
                 <!--url: nombre de la ruta definida en urls.py
                     texto: texto que aparece en el boton-->
                     <a href="{% url opcion.url %}" class="boton"><!--genera automaticamente url correcta segun nombre ruta-->
